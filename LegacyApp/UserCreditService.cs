@@ -1,10 +1,11 @@
-﻿using System;
+using LegacyApp.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 
 namespace LegacyApp
 {
-    public class UserCreditService : IDisposable
+    public class UserCreditService : IDisposable, IUserCreditService
     {
         /// <summary>
         /// Simulating database
