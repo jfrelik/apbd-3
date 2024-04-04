@@ -1,4 +1,4 @@
-using LegacyApp.Interfaces;
+﻿using LegacyApp.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -29,7 +29,7 @@ namespace LegacyApp
         /// This method is simulating contact with remote service which is used to get info about someone's credit limit
         /// </summary>
         /// <returns>Client's credit limit</returns>
-        internal int GetCreditLimit(string lastName, DateTime dateOfBirth)
+        public int GetCreditLimit(string lastName, DateTime dateOfBirth)
         {
             int randomWaitingTime = new Random().Next(3000);
             Thread.Sleep(randomWaitingTime);
